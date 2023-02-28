@@ -5,7 +5,7 @@
 	addonversion		"20230228"
 	addonauthor			"dontKICKme"
 	addonauthorSteamID	"STEAM_1:1:217912033"
-	addonURL0			""
+	addonURL0			"https://github.com/zombie110year/l4d2-provoking-radialmenu"
 	addonDescription 	"把预先设定的骚话以轮盘的形式绑定在 v 键上；
 						快捷商店绑定在 b 键上。
 						如果在游戏里发现调不出来，可能是其它的键绑定与现有的冲突了。
