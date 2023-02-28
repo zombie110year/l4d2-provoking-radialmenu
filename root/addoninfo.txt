@@ -1,0 +1,17 @@
+"AddonInfo"
+{
+	addonSteamAppID		"550"
+	addontitle			"垃圾话和快捷购买轮盘（适用黑喵服）"
+	addonversion		"20230228"
+	addonauthor			"dontKICKme"
+	addonauthorSteamID	"STEAM_1:1:217912033"
+	addonURL0			""
+	addonDescription 	"把预先设定的骚话以轮盘的形式绑定在 v 键上；
+						快捷商店绑定在 b 键上。
+						如果在游戏里发现调不出来，可能是其它的键绑定与现有的冲突了。
+						可以尝试在控制台手动绑定（v和b也可以换成其它键位）：
+							bind v +mouse_menu provoke;
+							bind b +mouse_menu shop;
+						+mouse_menu xxx 两侧需要加英文双引号。"
+	addonContent_Script	"1"
+}

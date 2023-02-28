@@ -1,0 +1,264 @@
+"RadialMenu"
+{
+	//--------------------------------------------------------------
+	"Orders,Survivor,Alive"
+	{
+		"Center"
+		{
+			"command"	"vocalize smartlook"
+			"text"		"#L4D_rosetta_look"
+		}
+		"North"
+		{
+			"command"	"vocalize PlayerMoveOn"
+			"text"		"#L4D_rosetta_letsgo"
+		}
+		"NorthEast"
+		{
+			"command"	"vocalize PlayerLeadOn"
+			"text"		"#L4D_rosetta_youtakelead"
+		}
+		"East"
+		{
+			"command"	"vocalize PlayerHurryUp"
+			"text"		"#L4D_rosetta_hurry"
+		}
+		"SouthEast"
+		{
+			"command"	"vocalize PlayerNiceJob"
+			"text"		"#L4D_rosetta_nicejob"
+		}
+		"South"
+		{
+			"command"	"vocalize PlayerWaitHere"
+			"text"		"#L4D_rosetta_waithere"
+		}
+		"SouthWest"
+		{
+			"command"	"vocalize PlayerToTheRescue"
+			"text"		"#L4D_rosetta_totherescue"
+		}
+		"West"
+		{
+			"command"	"vocalize PlayerWarnCareful"
+			"text"		"#L4D_rosetta_becareful"
+		}
+		"NorthWest"
+		{
+			"command"	"vocalize PlayerImWithYou"
+			"text"		"#L4D_rosetta_withyou"
+		}
+	}
+	//--------------------------------------------------------------
+	"QA,Survivor,Alive"
+	{
+		"Center"
+		{
+			"command"	"vocalize PlayerAskReady"
+			"text"		"#L4D_rosetta_ready"
+		}
+		"North"
+		{
+			"command"	"vocalize PlayerLaugh"
+			"text"		"#L4D_rosetta_laugh"
+		}
+		"NorthEast"
+		{
+			"command"	"vocalize PlayerTaunt"
+			"text"		"#L4D_rosetta_taunt"
+		}
+
+		"East"
+		{
+			"command"	"vocalize PlayerNegative"
+			"text"		"#L4D_rosetta_negative"
+		}
+		"SouthEast"
+		{
+			"command"	"vocalize PlayerNo"
+			"text"		"#L4D_rosetta_no"
+		}
+		"South"
+		{
+			"command"	"vocalize PlayerSorry"
+			"text"		"#L4D_rosetta_sorry"
+		}
+		"SouthWest"
+		{
+			"command"	"vocalize PlayerYes"
+			"text"		"#L4D_rosetta_yes"
+		}
+		"West"
+		{
+			"command"	"vocalize PlayerHurrah"
+			"text"		"#L4D_rosetta_hurrah"
+		}
+		"NorthWest"
+		{
+			"command"	"vocalize PlayerThanks"
+			"text"		"#L4D_rosetta_thankyou"
+		}
+	}
+
+	//--------------------------------------------------------------
+	"Orders,Zombie,Alive"
+	{
+		"Center"
+		{
+			"command"	"vocalize PlayerZombieTaunt"
+			"label"		"#L4D_rosetta_grrrr"
+		}
+	}
+
+	//--------------------------------------------------------------
+	"QA,Zombie,Alive"
+	{
+		"Center"
+		{
+			"command"	"vocalize PlayerZombieTaunt"
+			"text"		"#L4D_rosetta_grrrr"
+		}
+	}
+
+	//--------------------------------------------------------------
+	"Alerts,Zombie,Alive"
+	{
+		"Center"
+		{
+			"command"	"vocalize PlayerZombieTaunt"
+			"text"		"#L4D_rosetta_grrrr"
+		}
+	}
+	//==============================================================
+	"provoke,Survivor"
+	{
+		"Center"
+		{
+			"command"	"say |д`) 这可真是令人感到害怕;"
+			"text"	"怂了"
+		}
+		"North"
+		{
+			"command"	"say ( ಡωಡ) 嘿嘿嘿;"
+			"text"	"嘿嘿嘿"
+		}
+		"NorthEast"
+		{
+			"command"	"say 666;"
+			"text"	"666"
+		}
+		"East"
+		{
+			"command"	"say (˚ ˃̣̣̥᷄⌓˂̣̣̥᷅ ) 嘤嘤嘤;"
+			"text"	"嘤嘤嘤"
+		}
+		"SouthEast"
+		{
+			"command"	"say (●♡∀♡) 我蛋蛋好痒，快来捏我！;"
+			"text"	"挑衅hunter"
+		}
+		"South"
+		{
+			"command"	"say ( ಡωಡ) 嘿嘿嘿，就等hunter飞下来~;"
+			"text"	"空爆hunter"
+		}
+		"SouthWest"
+		{
+			"command"	"say (●♡∀♡) 有牛牛吗，有牛牛吗，快来撅我~~;"
+			"text"	"挑衅牛牛"
+		}
+		"West"
+		{
+			"command"	"say ( ಡωಡ) 牛牛寸止挑战大成功~;"
+			"text"	"击倒冲锋"
+		}
+		"NorthWest"
+		{
+			"command"	"say (ಡωಡ)っθ 吃我秘制小汉堡儿~~;"
+			"text"	"胆汁tank"
+		}
+	}
+	//==============================================================
+	"provoke,Infected"
+	{
+		"Center"
+		{
+			"command"	"say |ω・´) 看看是哪个倒霉鬼要被我下一个整呢~;"
+			"text"		"暗中观察"
+		}
+		"North"
+		{
+			"command"	"say ( ಡωಡ) 牛牛运输大队长，用户默认好评~;"
+			"text"	"牛牛秒杀"
+		}
+		"NorthEast"
+		{
+			"command"	"say ヽ(>∀ <☆)ノ 这是沸↓羊↑羊↑的感觉~~;"
+			"text"	"猴子秒杀"
+		}
+		"East"
+		{
+			"command"	"say (ﾉ´ヮ`)ﾉ*: ･ﾟ 弹射起飞，体验良好！;"
+			"text"	"胖子秒杀"
+		}
+		"SouthEast"
+		{
+			"command"	"say ☆ ～('▽^人) 一口老痰，这酸爽简直让人无法相信~;"
+			"text"	"口水高伤"
+		}
+		"South"
+		{
+			"command"	"say (ﾉ´ з—)— 亚洲捆绑.avi;"
+			"text"	"舌头拉人"
+		}
+		"SouthWest"
+		{
+			"command"	"say (ಡωಡ)っoo  ∩ 蛋蛋没咯~~;"
+			"text"	"Hunter高扑"
+		}
+		"West"
+		{
+			"command"	"say ╰(●｀∀'●)╯WRYYYYYYYYYY!;"
+			"text"	"选到tank"
+		}
+		"NorthWest"
+		{
+			"command"	"say (・`∀´・).:☆我累哇赛高尼HIGH↑铁鸭子哒！;"
+			"text"	"嗨到不行"
+		}
+	}
+	"shop,Survivor,Alive" {
+		"Center"
+		{
+			"command"	"sm_buy;"
+			"text"	"一键购买"
+		}
+		"North"
+		{
+			"command"	"sm_buy; wait 15; menuselect 1; wait 15; menuselect 6; wait 15; menuselect 3; wait 15; menuselect 1; say (´• ω •`)っθ 臭豆腐、俘虏、老干妈，往里倒罐臭卤虾！;"
+			"text"	"买胆汁"
+		}
+		"South"
+		{
+			"command"	"sm_buy; wait 15; menuselect 3; wait 15; menuselect 2; wait 15; menuselect 1; say_team 买电击器了，尸体在哪里？;"
+			"text"	"买电击器"
+		}
+	}
+	"shop,Infected,Alive" {
+		"Center"
+		{
+			"command"	"sm_buy;"
+			"text"	"一键购买"
+		}
+		"North"
+		{
+			"command"	"sm_buy; wait 15; menuselect 1; wait 15; menuselect 1; say o(>ω <)o满血复活！（-￥600）;"
+			"text"	"买血"
+		}
+		"South"
+		{
+			"command"	"sm_buy; wait 15; menuselect 2; wait 15; menuselect 1;"
+			"text"	"买自杀"
+		}
+	}
+}
