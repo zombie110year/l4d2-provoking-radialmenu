@@ -1,136 +1,107 @@
 "RadialMenu"
 {
-	//--------------------------------------------------------------
+	//--------
 	"Orders,Survivor,Alive"
 	{
 		"Center"
 		{
 			"command"	"vocalize smartlook"
-			"text"		"#L4D_rosetta_look"
+			"text"	"#L4D_rosetta_look"
 		}
 		"North"
 		{
 			"command"	"vocalize PlayerMoveOn"
-			"text"		"#L4D_rosetta_letsgo"
+			"text"	"#L4D_rosetta_letsgo"
 		}
 		"NorthEast"
 		{
 			"command"	"vocalize PlayerLeadOn"
-			"text"		"#L4D_rosetta_youtakelead"
+			"text"	"#L4D_rosetta_youtakelead"
 		}
 		"East"
 		{
 			"command"	"vocalize PlayerHurryUp"
-			"text"		"#L4D_rosetta_hurry"
+			"text"	"#L4D_rosetta_hurry"
 		}
 		"SouthEast"
 		{
 			"command"	"vocalize PlayerNiceJob"
-			"text"		"#L4D_rosetta_nicejob"
+			"text"	"#L4D_rosetta_nicejob"
 		}
 		"South"
 		{
 			"command"	"vocalize PlayerWaitHere"
-			"text"		"#L4D_rosetta_waithere"
+			"text"	"#L4D_rosetta_waithere"
 		}
 		"SouthWest"
 		{
 			"command"	"vocalize PlayerToTheRescue"
-			"text"		"#L4D_rosetta_totherescue"
+			"text"	"#L4D_rosetta_totherescue"
 		}
 		"West"
 		{
 			"command"	"vocalize PlayerWarnCareful"
-			"text"		"#L4D_rosetta_becareful"
+			"text"	"#L4D_rosetta_becareful"
 		}
 		"NorthWest"
 		{
 			"command"	"vocalize PlayerImWithYou"
-			"text"		"#L4D_rosetta_withyou"
+			"text"	"#L4D_rosetta_withyou"
 		}
+
 	}
-	//--------------------------------------------------------------
+	//--------
 	"QA,Survivor,Alive"
 	{
 		"Center"
 		{
 			"command"	"vocalize PlayerAskReady"
-			"text"		"#L4D_rosetta_ready"
+			"text"	"#L4D_rosetta_ready"
 		}
 		"North"
 		{
 			"command"	"vocalize PlayerLaugh"
-			"text"		"#L4D_rosetta_laugh"
+			"text"	"#L4D_rosetta_laugh"
 		}
 		"NorthEast"
 		{
 			"command"	"vocalize PlayerTaunt"
-			"text"		"#L4D_rosetta_taunt"
+			"text"	"#L4D_rosetta_taunt"
 		}
-
 		"East"
 		{
 			"command"	"vocalize PlayerNegative"
-			"text"		"#L4D_rosetta_negative"
+			"text"	"#L4D_rosetta_negative"
 		}
 		"SouthEast"
 		{
 			"command"	"vocalize PlayerNo"
-			"text"		"#L4D_rosetta_no"
+			"text"	"#L4D_rosetta_no"
 		}
 		"South"
 		{
 			"command"	"vocalize PlayerSorry"
-			"text"		"#L4D_rosetta_sorry"
+			"text"	"#L4D_rosetta_sorry"
 		}
 		"SouthWest"
 		{
 			"command"	"vocalize PlayerYes"
-			"text"		"#L4D_rosetta_yes"
+			"text"	"#L4D_rosetta_yes"
 		}
 		"West"
 		{
 			"command"	"vocalize PlayerHurrah"
-			"text"		"#L4D_rosetta_hurrah"
+			"text"	"#L4D_rosetta_hurrah"
 		}
 		"NorthWest"
 		{
 			"command"	"vocalize PlayerThanks"
-			"text"		"#L4D_rosetta_thankyou"
+			"text"	"#L4D_rosetta_thankyou"
 		}
-	}
 
-	//--------------------------------------------------------------
-	"Orders,Zombie,Alive"
-	{
-		"Center"
-		{
-			"command"	"vocalize PlayerZombieTaunt"
-			"label"		"#L4D_rosetta_grrrr"
-		}
 	}
-
-	//--------------------------------------------------------------
-	"QA,Zombie,Alive"
-	{
-		"Center"
-		{
-			"command"	"vocalize PlayerZombieTaunt"
-			"text"		"#L4D_rosetta_grrrr"
-		}
-	}
-
-	//--------------------------------------------------------------
-	"Alerts,Zombie,Alive"
-	{
-		"Center"
-		{
-			"command"	"vocalize PlayerZombieTaunt"
-			"text"		"#L4D_rosetta_grrrr"
-		}
-	}
-	//==============================================================
-	"provoke,Survivor"
+	//--------
+	"bm_provoke,Survivor"
 	{
 		"Center"
 		{
@@ -177,18 +148,19 @@
 			"command"	"say (ಡωಡ)っθ 吃我秘制小汉堡儿~~;"
 			"text"	"胆汁tank"
 		}
+
 	}
-	//==============================================================
-	"provoke,Infected"
+	//--------
+	"bm_provoke,Infected"
 	{
 		"Center"
 		{
 			"command"	"say |ω・´) 看看是哪个倒霉鬼要被我下一个整呢~;"
-			"text"		"暗中观察"
+			"text"	"暗中观察"
 		}
 		"North"
 		{
-			"command"	"say ( ಡωಡ) 牛牛运输大队长，用户默认好评~;"
+			"command"	"say ( ಡωಡ) 牛牛速运已结束，用户默认好评~;"
 			"text"	"牛牛秒杀"
 		}
 		"NorthEast"
@@ -219,20 +191,18 @@
 		"West"
 		{
 			"command"	"say ╰(●｀∀'●)╯WRYYYYYYYYYY!;"
-			"text"	"选到tank"
+			"text"	"WRYYY"
 		}
 		"NorthWest"
 		{
 			"command"	"say (・`∀´・).:☆我累哇赛高尼HIGH↑铁鸭子哒！;"
 			"text"	"嗨到不行"
 		}
+
 	}
-	"shop,Survivor,Alive" {
-		"Center"
-		{
-			"command"	"sm_buy;"
-			"text"	"一键购买"
-		}
+	//--------
+	"bm_shop,Survivor,Alive"
+	{
 		"North"
 		{
 			"command"	"sm_buy; wait 15; menuselect 1; wait 15; menuselect 6; wait 15; menuselect 3; wait 15; menuselect 1; say (´• ω •`)っθ 臭豆腐、俘虏、老干妈，往里倒罐臭卤虾！;"
@@ -243,13 +213,11 @@
 			"command"	"sm_buy; wait 15; menuselect 3; wait 15; menuselect 2; wait 15; menuselect 1; say_team 买电击器了，尸体在哪里？;"
 			"text"	"买电击器"
 		}
+
 	}
-	"shop,Infected,Alive" {
-		"Center"
-		{
-			"command"	"sm_buy;"
-			"text"	"一键购买"
-		}
+	//--------
+	"bm_shop,Infected,Alive"
+	{
 		"North"
 		{
 			"command"	"sm_buy; wait 15; menuselect 1; wait 15; menuselect 1; say o(>ω <)o满血复活！（-￥600）;"
@@ -260,5 +228,7 @@
 			"command"	"sm_buy; wait 15; menuselect 2; wait 15; menuselect 1;"
 			"text"	"买自杀"
 		}
+
 	}
+
 }
