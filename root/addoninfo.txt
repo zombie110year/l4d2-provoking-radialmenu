@@ -2,7 +2,7 @@
 {
 	addonSteamAppID		"550"
 	addontitle			"垃圾话和快捷购买轮盘（适用黑喵服）"
-	addonversion		"20230228"
+	addonversion		"20230308"
 	addonauthor			"dontKICKme"
 	addonauthorSteamID	"STEAM_1:1:217912033"
 	addonURL0			"https://github.com/zombie110year/l4d2-provoking-radialmenu"
