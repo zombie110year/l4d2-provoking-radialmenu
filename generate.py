@@ -93,7 +93,7 @@ class Radials:
     def generate_config(self) -> str:
         "根据包含的菜单，生成几行配置模板，<KEY> 键表示需要绑定的快捷键"
         template = '//bind <KEY> "+mouse_menu {name}"'
-        names = [c.name for c in self.contents]
+        names = set([c.name for c in self.contents])
         lines = [template.format(name=name) for name in names]
         return "\n".join(lines)
 
@@ -317,6 +317,8 @@ def main():
         "team": "Survivor",
         "alive": "Alive",
 
+        # RadialPair(指令, 显示文本)
+        "Center": RadialPair(";", "快捷商店"),
         "North": COMMANDS["bm_买胆汁"],
         "South": COMMANDS["bm_买电击器"],
     }))
@@ -325,6 +327,8 @@ def main():
         "team": "Infected",
         "alive": "Alive",
 
+        # RadialPair(指令, 显示文本)
+        "Center": RadialPair(";", "快捷商店"),
         "North": COMMANDS["bm_特感买血"],
         "South": COMMANDS["bm_特感买自杀"],
     }))

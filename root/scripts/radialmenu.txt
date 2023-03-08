@@ -48,7 +48,7 @@
 			"command"	"vocalize PlayerImWithYou"
 			"text"	"#L4D_rosetta_withyou"
 		}
-
+		
 	}
 	//--------
 	"QA,Survivor,Alive"
@@ -98,7 +98,7 @@
 			"command"	"vocalize PlayerThanks"
 			"text"	"#L4D_rosetta_thankyou"
 		}
-
+		
 	}
 	//--------
 	"bm_provoke,Survivor"
@@ -148,7 +148,7 @@
 			"command"	"say (ಡωಡ)っθ 吃我秘制小汉堡儿~~;"
 			"text"	"胆汁tank"
 		}
-
+		
 	}
 	//--------
 	"bm_provoke,Infected"
@@ -198,11 +198,16 @@
 			"command"	"say (・`∀´・).:☆我累哇赛高尼HIGH↑铁鸭子哒！;"
 			"text"	"嗨到不行"
 		}
-
+		
 	}
 	//--------
 	"bm_shop,Survivor,Alive"
 	{
+		"Center"
+		{
+			"command"	";"
+			"text"	"快捷商店"
+		}
 		"North"
 		{
 			"command"	"sm_buy; wait 15; menuselect 1; wait 15; menuselect 6; wait 15; menuselect 3; wait 15; menuselect 1; say (´• ω •`)っθ 臭豆腐、俘虏、老干妈，往里倒罐臭卤虾！;"
@@ -213,11 +218,16 @@
 			"command"	"sm_buy; wait 15; menuselect 3; wait 15; menuselect 2; wait 15; menuselect 1; say_team 买电击器了，尸体在哪里？;"
 			"text"	"买电击器"
 		}
-
+		
 	}
 	//--------
 	"bm_shop,Infected,Alive"
 	{
+		"Center"
+		{
+			"command"	";"
+			"text"	"快捷商店"
+		}
 		"North"
 		{
 			"command"	"sm_buy; wait 15; menuselect 1; wait 15; menuselect 1; say o(>ω <)o满血复活！（-￥600）;"
@@ -228,7 +238,7 @@
 			"command"	"sm_buy; wait 15; menuselect 2; wait 15; menuselect 1;"
 			"text"	"买自杀"
 		}
-
+		
 	}
-
+	
 }
