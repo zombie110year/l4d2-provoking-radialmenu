@@ -105,13 +105,13 @@
 	{
 		"Center"
 		{
-			"command"	"say |д`) 这可真是令人感到害怕;"
-			"text"	"怂了"
+			"command"	"say ( 首) 哼哼，啊啊啊啊啊啊啊——"
+			"text"	"嚎叫"
 		}
 		"North"
 		{
-			"command"	"say ( ಡωಡ) 嘿嘿嘿;"
-			"text"	"嘿嘿嘿"
+			"command"	"say (ಡωಡ)嘻嘻嘻~; vocalize PlayerLaugh;"
+			"text"	"嘻嘻嘻"
 		}
 		"NorthEast"
 		{
@@ -120,8 +120,8 @@
 		}
 		"East"
 		{
-			"command"	"say (˚ ˃̣̣̥᷄⌓˂̣̣̥᷅ ) 嘤嘤嘤;"
-			"text"	"嘤嘤嘤"
+			"command"	"say ( ´>⌓<`) 你—干—嘛——，哎~~哟~~; vocalize PlayerDeath;"
+			"text"	"你干嘛"
 		}
 		"SouthEast"
 		{
@@ -151,12 +151,62 @@
 		
 	}
 	//--------
+	"common_survivor,Survivor"
+	{
+		"Center"
+		{
+			"command"	";"
+			"text"	"null"
+		}
+		"North"
+		{
+			"command"	"say *´∀`)´∀`)*´∀`)σ 有笨比，23333~ (x д x); vocalize PlayerLaugh;"
+			"text"	"233"
+		}
+		"NorthEast"
+		{
+			"command"	"say 666;"
+			"text"	"666"
+		}
+		"East"
+		{
+			"command"	"say ( ´>⌓<`) 你—干—嘛——，哎~~哟~~; vocalize PlayerDeath;"
+			"text"	"你干嘛"
+		}
+		"SouthEast"
+		{
+			"command"	"say ( 首) 哼哼，啊啊啊啊啊啊啊——"
+			"text"	"嚎叫"
+		}
+		"South"
+		{
+			"command"	"say_team o(>﹏<)o 好哥哥…我走不动了，那个…药，药…;"
+			"text"	"求药"
+		}
+		"SouthWest"
+		{
+			"command"	"say_team o(>﹏<)o 好哥哥…我黑白了…那个…可以吗…;"
+			"text"	"求包"
+		}
+		"West"
+		{
+			"command"	"say_team (っ °Д °)っ °Д °)っ °Д °)っ °Д °)っ▄︻┻═┳一 同志们跟我上，冲啊！; vocalize PlayerYellRun;"
+			"text"	"冲啊"
+		}
+		"NorthWest"
+		{
+			"command"	"say_team （＞人＜；）对不起！; vocalize PlayerSorry"
+			"text"	"对不起"
+		}
+		
+	}
+	//--------
 	"bm_provoke,Infected"
 	{
 		"Center"
 		{
-			"command"	"say |ω・´) 看看是哪个倒霉鬼要被我下一个整呢~;"
-			"text"	"暗中观察"
+			"command"	"vocalize PlayerZombieTaunt"
+			"text"	"#L4D_rosetta_grrrr"
 		}
 		"North"
 		{
@@ -205,7 +255,7 @@
 	{
 		"Center"
 		{
-			"command"	";"
+			"command"	"sm_buy;"
 			"text"	"快捷商店"
 		}
 		"North"
@@ -225,12 +275,12 @@
 	{
 		"Center"
 		{
-			"command"	";"
+			"command"	"sm_buy;"
 			"text"	"快捷商店"
 		}
 		"North"
 		{
-			"command"	"sm_buy; wait 15; menuselect 1; wait 15; menuselect 1; say o(>ω <)o满血复活！（-￥600）;"
+			"command"	"sm_buy; wait 15; menuselect 1; wait 15; menuselect 1; say o(>ω <)o满血复活！（-￥800）;"
 			"text"	"买血"
 		}
 		"South"

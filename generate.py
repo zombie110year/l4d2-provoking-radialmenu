@@ -187,6 +187,7 @@ class Compiler:
 
 # 游戏自带的默认指令和以前写的旧指令
 COMMANDS = {
+    "null": RadialPair(";", "null"),
     # 原版
     "look": RadialPair("vocalize smartlook", "#L4D_rosetta_look"),
     "letsgo": RadialPair("vocalize PlayerMoveOn", "#L4D_rosetta_letsgo"),
@@ -229,8 +230,17 @@ COMMANDS = {
     "sm_buy": RadialPair("sm_buy;", "一键购买"),
     "bm_买胆汁": RadialPair("sm_buy; wait 15; menuselect 1; wait 15; menuselect 6; wait 15; menuselect 3; wait 15; menuselect 1; say (´• ω •`)っθ 臭豆腐、俘虏、老干妈，往里倒罐臭卤虾！;", "买胆汁"),
     "bm_买电击器": RadialPair("sm_buy; wait 15; menuselect 3; wait 15; menuselect 2; wait 15; menuselect 1; say_team 买电击器了，尸体在哪里？;", "买电击器"),
-    "bm_特感买血": RadialPair("sm_buy; wait 15; menuselect 1; wait 15; menuselect 1; say o(>ω <)o满血复活！（-￥600）;", "买血"),
+    "bm_特感买血": RadialPair("sm_buy; wait 15; menuselect 1; wait 15; menuselect 1; say o(>ω <)o满血复活！（-￥800）;", "买血"),
     "bm_特感买自杀": RadialPair("sm_buy; wait 15; menuselect 2; wait 15; menuselect 1;", "买自杀"),
+    "臭之嚎叫": RadialPair("say ( 首) 哼哼，啊啊啊啊啊啊啊——", "嚎叫"),
+    "嘻嘻嘻": RadialPair("say (ಡωಡ)嘻嘻嘻~; vocalize PlayerLaugh;", "嘻嘻嘻"),
+    "你干嘛": RadialPair("say ( ´>⌓<`) 你—干—嘛——，哎~~哟~~; vocalize PlayerDeath;", "你干嘛"),
+    "救救我": RadialPair("say_team (˚ ˃̣̣̥᷄⌓˂̣̣̥᷅ )救救我，救救我！; vocalize PlayerDeath;", "救命！"),
+    "233": RadialPair("say *´∀`)´∀`)*´∀`)σ 有笨比，23333~ (x д x); vocalize PlayerLaugh;", "233"),
+    "求药": RadialPair("say_team o(>﹏<)o 好哥哥…我走不动了，那个…药，药…;", "求药"),
+    "求包": RadialPair("say_team o(>﹏<)o 好哥哥…我黑白了…那个…可以吗…;", "求包"),
+    "冲啊": RadialPair("say_team (っ °Д °)っ °Д °)っ °Д °)っ °Д °)っ▄︻┻═┳一 同志们跟我上，冲啊！; vocalize PlayerYellRun;", "冲啊"),
+    "对不起": RadialPair("say_team （＞人＜；）对不起！; vocalize PlayerSorry", "对不起"),
 }
 
 ORDERS_SURVIVOR = RadialMenu.from_dict(
@@ -289,10 +299,10 @@ def main():
     x.add(RadialMenu.from_dict({
         "name": "bm_provoke",
         "team": "Survivor",
-        "Center": COMMANDS["怂了"],
-        "North": COMMANDS["嘿嘿嘿"],
+        "Center": COMMANDS["臭之嚎叫"],
+        "North": COMMANDS["嘻嘻嘻"],
         "NorthEast": COMMANDS["666"],
-        "East": COMMANDS["嘤嘤嘤"],
+        "East": COMMANDS["你干嘛"],
         "SouthEast": COMMANDS["bm_挑衅hunter"],
         "South": COMMANDS["空爆hunter"],
         "SouthWest": COMMANDS["挑衅牛牛"],
@@ -300,9 +310,22 @@ def main():
         "NorthWest": COMMANDS["胆汁tank"],
     }))
     x.add(RadialMenu.from_dict({
+        "name": "common_survivor",
+        "team": "Survivor",
+        "Center": COMMANDS["null"],
+        "North": COMMANDS["233"],
+        "NorthEast": COMMANDS["666"],
+        "East": COMMANDS["你干嘛"],
+        "SouthEast": COMMANDS["臭之嚎叫"],
+        "South": COMMANDS["求药"],
+        "SouthWest": COMMANDS["求包"],
+        "West": COMMANDS["冲啊"],
+        "NorthWest": COMMANDS["对不起"],
+    }))
+    x.add(RadialMenu.from_dict({
         "name": "bm_provoke",
         "team": "Infected",
-        "Center": COMMANDS["暗中观察"],
+        "Center": COMMANDS["grrrr"],
         "North": COMMANDS["牛牛秒杀"],
         "NorthEast": COMMANDS["bm_猴子秒杀"],
         "East": COMMANDS["bm_胖子秒杀"],
@@ -318,7 +341,7 @@ def main():
         "alive": "Alive",
 
         # RadialPair(指令, 显示文本)
-        "Center": RadialPair(";", "快捷商店"),
+        "Center": RadialPair("sm_buy;", "快捷商店"),
         "North": COMMANDS["bm_买胆汁"],
         "South": COMMANDS["bm_买电击器"],
     }))
@@ -328,7 +351,7 @@ def main():
         "alive": "Alive",
 
         # RadialPair(指令, 显示文本)
-        "Center": RadialPair(";", "快捷商店"),
+        "Center": RadialPair("sm_buy;", "快捷商店"),
         "North": COMMANDS["bm_特感买血"],
         "South": COMMANDS["bm_特感买自杀"],
     }))

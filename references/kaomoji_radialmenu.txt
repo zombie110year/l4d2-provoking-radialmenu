@@ -1,0 +1,281 @@
+"RadialMenu"
+{
+	//--------------------------------------------------------------
+	"Orders,Survivor,Alive"
+	{
+		"Center"
+		{
+			"command"	"say_team （￣.￣）+ 看看这是啥玩意？;vocalize smartlook"
+			"text"		"#L4D_rosetta_look"
+		}
+		"North"
+		{
+			"command"	"say_team o(￣ε￣*) 别磨叽了，快点走吧。;vocalize PlayerMoveOn"
+			"text"		"#L4D_rosetta_letsgo"
+		}
+		"NorthEast"
+		{
+			"command"	"say_team (o゜▽゜)o☆  求老司机带带路！;vocalize PlayerLeadOn"
+			"text"		"#L4D_rosetta_youtakelead"
+		}	
+		"East"
+		{
+			"command"	"say_team (⊙﹏⊙)  大家走快点！;vocalize PlayerHurryUp"
+			"text"		"#L4D_rosetta_hurry"
+		}	
+		"SouthEast"
+		{
+			"command"	"say_team (๑•̀ㅂ•́)و✧ GoodJob！干得漂亮！;vocalize PlayerNiceJob"
+			"text"		"#L4D_rosetta_nicejob"
+		}	
+		"South"
+		{
+			"command"	"say_team (*￣ω￣) 等一下！;vocalize PlayerWaitHere"
+			"text"		"#L4D_rosetta_waithere"
+		}
+		"SouthWest"
+		{
+			"command" "say_team o((⊙﹏⊙))o 在那躺着先！之后再来救你！;vocalize PlayerToTheRescue"
+			"text"		"#L4D_rosetta_totherescue"
+		}
+		"West"
+		{
+			"command"	"say_team (＞﹏＜) .  别Rush B啊！慢点走啊啊啊！;vocalize PlayerWarnCareful"
+			"text"		"#L4D_rosetta_becareful"
+		}
+		"NorthWest"
+		{
+			"command"	"say_team ヽ(￣ω￣(￣ω￣〃)ゝ  先走吧！我马上来！;vocalize PlayerImWithYou"
+			"text"		"#L4D_rosetta_withyou"
+		}	
+	}
+	//--------------------------------------------------------------
+	"QA,Survivor,Alive"
+	{
+		"Center"
+		{
+			"command"	"say_team （。·▽·）  准备好了吗?我忍不住想黑枪了;vocalize PlayerAskReady"
+			"text"		"#L4D_rosetta_ready"
+		}
+		"North"
+		{
+			"command"	"vocalize PlayerLaugh"
+			"text"		"#L4D_rosetta_laugh"
+		}
+		"NorthEast"
+		{
+			"command"	"say_team *´∀`)´∀`)*´∀`)*´∀`)  ;vocalize PlayerTaunt"
+			"text"		"#L4D_rosetta_taunt"
+		}
+
+		"East"
+		{
+			"command"	"say_team ━((*′д｀)爻(′д｀*))━!!!  妈耶！呀！啊！;vocalize PlayerNegative"
+			"text"		"#L4D_rosetta_negative"
+		}
+		"SouthEast"
+		{
+			"command"	"say_team ＞(￣ε￣ = ￣3￣)<不要;vocalize PlayerNo"
+			"text"		"#L4D_rosetta_no"
+		}
+		"South"
+		{
+			"command"	"say_team （＞人＜；）  对不起！;vocalize PlayerSorry"
+			"text"		"#L4D_rosetta_sorry"
+		}
+		"SouthWest"
+		{
+			"command"	"say_team (≧∇≦)ﾉ  Yes！;vocalize PlayerYes"
+			"text"		"#L4D_rosetta_yes"
+		}
+		"West"
+		{
+			"command"	"say_team o(≧v≦)o~~  好啊！;vocalize PlayerHurrah"
+			"text"		"#L4D_rosetta_hurrah"
+		}
+		"NorthWest"
+		{
+			"command"	"say_team o(*￣3￣)o  阿里嘎多！;vocalize PlayerThanks"
+			"text"		"#L4D_rosetta_thankyou"
+		}
+	}
+	
+	//--------------------------------------------------------------
+	"Orders,Zombie,Alive"
+	{
+		"Center"
+		{
+			"command"	"vocalize PlayerZombieTaunt"
+			"label"		"#L4D_rosetta_grrrr"
+		}
+	}
+
+	//--------------------------------------------------------------
+	"QA,Zombie,Alive"
+	{
+		"Center"
+		{
+			"command"	"vocalize PlayerZombieTaunt"
+			"text"		"#L4D_rosetta_grrrr"
+		}
+	}
+
+	//--------------------------------------------------------------
+	"Alerts,Zombie,Alive"
+	{
+		"Center"
+		{
+			"command"	"vocalize PlayerZombieTaunt"
+			"text"		"#L4D_rosetta_grrrr"
+		}
+	}
+	//--------------------------------------------------------------
+	"temp,Survivor,Alive"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		""
+		}
+		"North"
+		{
+			"command"	"say_team Ｏ(≧口≦)Ｏ  啊！！！;vocalize PlayerDeath"
+			"text"		"死亡尖叫"
+		}
+		"NorthEast"
+		{
+			"command"	"say_team <(￣ˇ￣)/  跟着我！Vocalize PlayerFollowMe"
+			"text"		"跟着我"
+		}
+		"East"
+		{
+			"command"	""
+			"text"		""
+		}
+		"SouthEast"
+		{
+			"command"	"say_team ε=ε=ε=┏(゜ロ゜;)┛  run!run!run!;Vocalize PlayerYellRun"
+			"text"		"跑路了"
+		}
+		"South"
+		{
+			"command"	"say_team _( ﾟДﾟ)ﾉ  我先跑路了~;Vocalize PlayerBackUp"
+			"text"		"撤退"
+		}
+		"SouthWest"
+		{
+			"command"	"say_team w(ﾟДﾟ)w WTF！要惹毛妹子啦！;Vocalize WitchGettingAngry"
+			"text"		"妹子发飙"
+		}
+		"West"
+		{
+			"command"	"say_team (〃＞目＜)  救命！快来救我啊！;Vocalize CallForRescue"
+			"text"		"快来救我"
+		}
+		"NorthWest"
+		{
+			"command"	""
+			"text"		""
+		}
+	}
+		//--------------------------------------------------------------
+	"AlertInfected,Survivor,Alive"
+	{
+		"Center"
+		{
+			"command"	"say_team w(ﾟДﾟ)w  尸潮来了！;vocalize PlayerIncoming"
+			"text"		"尸潮来了"
+		}
+		"North"
+		{
+			"command"	"say_team Σ(っ °Д °)っ 妈耶！Tank！;Vocalize Playeralsowarntank"
+			"text"		"TANK"
+		}
+		"NorthEast"
+		{
+			"command"	"say_team o(￣ε￣*) 前方妹子出没！;Vocalize Playeralsowarnwitch"
+			"text"		"妹子"
+		}
+
+		"East"
+		{
+			"command"	"say_team o(>﹏<)o  小心胖子！！;Vocalize Playeralsowarnboomer"
+			"text"		"胖子"
+		}
+		"SouthEast"
+		{
+			"command"	"say_team o(>﹏<)o  小心舌吻变态大叔！！！;Vocalize Playeralsowarnsmoker"
+			"text"		"舌头/烟鬼"
+		}
+		"South"
+		{
+			"command"	"say_team o(>﹏<)o  小心前方同志出没！请小心行事！;Vocalize Playeralsowarnhunter"
+			"text"		"hunter"
+		}
+		"SouthWest"
+		{
+			"command"	"say_team o(>﹏<)o  小心口水怪！！;vocalize PlayerWarnCareful"
+			"text"		"口水"
+		}
+		"West"
+		{
+			"command"	"say_team o(>﹏<)o  骑乘位了解下嗯？;vocalize PlayerWarnCareful"
+			"text"		"猴子"
+		}
+		"NorthWest"
+		{
+			"command"	"say_team o(>﹏<)o  前方撞牛建议直推！;vocalize PlayerWarnCareful"
+			"text"		"撞牛"
+		}
+	}
+	//--------------------------------------------------------------
+	"public,Survivor,Alive"
+	{
+		"Center"
+		{
+			"command"	"say_team φ(゜▽゜*)♪  我这有急救包/药/针！;"
+			"text"		"急救包/药/针"
+		}
+		"North"
+		{
+			"command"	"say_team (o゜▽゜)o☆ 啊哈哈,我tm直接笑死！;vocalize PlayerLaugh"
+			"text"		"我TM直接笑死"
+		}
+		"NorthEast"
+		{
+			"command"	"say_team ▄︻┻═┳一 我这有枪！;"
+			"text"		"枪"
+		}
+
+		"East"
+		{
+			"command"	"say_team Ｏ(≧口≦)Ｏ  啊！！！;vocalize PlayerDeath"
+			"text"		"死亡尖叫"
+		}
+		"SouthEast"
+		{
+			"command"	"say_team  (╯>д<)╯⁽˙³˙⁾ 我这有手雷！;"
+			"text"		"手雷"
+		}
+		"South"
+		{
+			"command"	"say_team  (╯°Д°)╯︵ ┻━┻ wdnmd就不能打准点吗！黑枪之路名不虚传！;vocalize PlayerFriendlyFire"
+			"text"		"黑枪之路"
+		}
+		"SouthWest"
+		{
+			"command"	"say_team ( *⊙~⊙) 我这有红外线！;"
+			"text"		"红外线"
+		}
+		"West"
+		{
+			"command"	"say_team ( *^-^)ρ(^0^* )  看屁股后面啊大兄弟！被人偷屁股了！;"
+			"text"		"看后面"
+		}
+		"NorthWest"
+		{
+			"command"	"say_team ( *・ω・)✄╰ひ╯ 我这有近战/手枪！;"
+			"text"		"近战/手枪"
+		}
+	}
+}
